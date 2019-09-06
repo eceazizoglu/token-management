@@ -3,12 +3,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+
 var ClientSchema = new Schema({
     client: {
         firstName: String,
         lastName: String,
         email: String,
-        userID: Number
+        userID: Number,
+        password: String
     },
 
     Created_date: {
@@ -25,7 +27,7 @@ var StoreSchema = new Schema({
         address: String,
         devices: Array,
         userID: Number
-    },
+    }
 
 });
 
@@ -33,8 +35,10 @@ var DeviceSchema = new Schema({
 
     device: {
         deviceID: Number,
-        storeID: Number
-    },
+        storeID: Number,
+        isActive: Boolean
+
+    }
 
 });
 

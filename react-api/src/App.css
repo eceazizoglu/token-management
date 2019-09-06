@@ -1,0 +1,80 @@
+@media all and (min-width: 50px) {
+ 
+  body {
+    background: url(token.jpeg);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+     color: rgb(255, 255, 255);
+     text-decoration: none   
+     }
+
+  label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+  .Login {
+    background: rgb(43, 43, 43);
+     color: rgb(255, 255, 255);
+     text-decoration: none   ;
+    padding: 80px;
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: right;
+    width: 50%;
+    border: 1px solid black;
+    /* align center */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0px)
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: Lato; font-size: 36px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 0 20px;
+    text-align: center; 
+
+
+  }
+
+  .form-group {
+    margin: 8px 0;
+    width: 100%
+  }
+
+  .form-control {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  .form-label {
+    float: left;
+    display: block!important;
+    width: auto
+  }
+
+  .login-button {
+    width: 100%;
+    color: rgb(17, 17, 17);
+
+  }
+
+  .login_popup {
+    width: 100%;
+    color: rgb(17, 17, 17);
+  }
+}

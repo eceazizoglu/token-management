@@ -8,19 +8,38 @@ var client = require('../controllers/clientController');
         .delete(client.delete_all_clients)
 
     app.route('/clients/:userID') 
-        .get(client.read_a_client) //
-        .delete(client.delete_a_client) //
-       // .put(client.update_a_client) //
+        .get(client.read_a_client) 
+        .delete(client.delete_a_client) 
+
+    app.route('/login')
+    .post(client.check_client)
 
     app.route('/stores')
         .get(client.read_the_stores)
         .post(client.create_a_store)
-        .put(client.update_a_store) 
-        .delete(client.delete_a_store)
+        .delete(client.delete_all_stores)
+
+    app.route('/stores/:userID')
+        .get(client.read_the_stores_by_userID)
+
+   app.route('/stores/:storeID') 
+       .get(client.read_a_store) 
+       .put(client.update_a_store) 
+       .delete(client.delete_a_store) 
 
     app.route('/devices')
         .get(client.read_the_devices)
-        .put(client.put_a_device)
-        .delete(client.delete_a_device)
+        .post(client.create_a_device)
+        .put(client.update_a_device)
+        .delete(client.delete_all_devices)
+
+    app.route('/devices/:storeID')
+        .get(client.read_the_devices_by_storeID)
+        .delete(client.delete_all_devices_in_the_store)
+
+    app.route('/device/:deviceID') 
+        .get(client.read_a_device) 
+        .delete(client.delete_a_device) 
+
 
 };

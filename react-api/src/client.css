@@ -1,0 +1,29 @@
+
+    .Client {
+        color: #222;
+         text-decoration: none
+    }
+
+    h2 {
+        color: #ffffff;
+        font-family: 'Droid serif', serif; font-size: 36px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100px;
+        margin: 0 0 12px;
+        text-align: center; 
+      }
+  
+    
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+  
+
+  
+
+  
+    
+  
